@@ -1,7 +1,9 @@
-// Answer Button
+// Leon's fencing quiz
 
+// Answer Button
 document.getElementById("mark").addEventListener("click", markBtnClicked);
 
+// Variables
 function markBtnClicked() {
   let qn1 = "yes";
   let qn2 = "3";
@@ -15,6 +17,7 @@ function markBtnClicked() {
   let totalcorrect = 0;
   let totalquestions = 4;
 
+  // Initial Output
   if (question === qn1) {
     document.getElementById("quest").innerHTML = "Correct";
     totalcorrect++;
@@ -40,7 +43,7 @@ function markBtnClicked() {
     document.getElementById("quest4").innerHTML = "False";
   }
 
-  // Output
+  // Output of how well you did
 
   document.getElementById("score").innerHTML = totalcorrect;
 
